@@ -10,11 +10,11 @@ public class Post {
     private int replyOwnerID;
     private int replyPostID;
     private int friendsOnly;
-    private Comments comments;
+    private CommentsInfo commentsInfo;
     private Copyright copyright;
-    private Likes likes;
-    private Reposts reposts;
-    private Views views;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
     private String postType;
     private PostSource postSource;
     private Geo geo;
@@ -32,24 +32,24 @@ public class Post {
         return ID;
     }
 
-    public int setID(int ID) {
-        return this.ID = ID;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public int getOwnerID() {
         return ownerID;
     }
 
-    public int setOwnerID(int ownerID) {
-        return this.ownerID = ownerID;
+    public void setOwnerID(int ownerID) {
+        this.ownerID = ownerID;
     }
 
     public int getFromID() {
         return fromID;
     }
 
-    public int setFromID(int fromID) {
-        return this.fromID = fromID;
+    public void setFromID(int fromID) {
+        this.fromID = fromID;
     }
 
     public int getCreatedBy() {
@@ -68,4 +68,116 @@ public class Post {
         this.date = date;
     }
 
+    public String getText() {
+        return getText();
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public int getReplyOwnerID() {
+        return replyOwnerID;
+    }
+
+    public void setReplyOwnerID(int replyOwnerID) {
+        this.replyOwnerID = replyOwnerID;
+    }
+
+    public int getReplyPostID() {
+        return replyPostID;
+    }
+
+    public void setReplyPostID(int replyPostID) {
+        this.replyPostID = replyPostID;
+    }
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postSource) {
+        this.postType = postType;
+    }
+
+    public String getPostSource() {
+        return postType;
+    }
+
+    public void setPostSource(String postSource) {
+        this.postType = postType;
+    }
+
+    public int getSignerID() {
+        return signerID;
+    }
+
+    public void setSignerID(int signerID) {
+        this.signerID = signerID;
+    }
+
+    public int getCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
+    }
+
+    public int getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
+    }
+
+
+    public int getCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public boolean getIsFavorite() {
+        return isFavorite;
+    }
+
+    public void setIsFavorite(boolean isFavorite) {
+        this.isFavorite = isFavorite;
+    }
+
+    public int getPostponedID() {
+        return postponedID;
+    }
+
+    public void setPostponedID(int postponedID) {
+        this.postponedID = postponedID;
+    }
 }
