@@ -27,4 +27,45 @@ public class Post {
     private boolean isFavorite;
     private Donut donut;
     private int postponedID;
+
+    public int getID() {
+        return ID;
+    }
+
+    public int setID(int ID) {
+        return this.ID = ID;
+    }
+
+    public int getOwnerID() {
+        return ownerID;
+    }
+
+    public int setOwnerID(int ownerID) {
+        return this.ownerID = ownerID;
+    }
+
+    public int getFromID() {
+        return fromID;
+    }
+
+    public int setFromID(int fromID) {
+        return this.fromID = fromID;
+    }
+
+    public int getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+
 }
